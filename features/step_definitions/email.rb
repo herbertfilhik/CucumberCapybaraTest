@@ -1,4 +1,4 @@
-Given /^I open Google$/ do
+Given /^I open email$/ do
 	wd = Selenium::WebDriver.for :firefox
 
 wd.get "https://temp-mail.org/pt/"
@@ -28,8 +28,8 @@ wd.assert.equal(fieldValue, email, 'You logged into a secure area!' + email).the
 wd.find_element('/html/body/div[2]/div/div/a/i').click
 end
 
-When /^I searc "(.*?)"$/ do |arg1|
+When /^I recovery pass$/ do
 end
 
-Then /^I should see a link to "(.*?)"$/ do |url|
+Then /^I make login$/ do
 end
